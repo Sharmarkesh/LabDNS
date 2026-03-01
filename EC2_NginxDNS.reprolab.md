@@ -12,7 +12,6 @@
 - [Step 2. Launch EC2 Instance](#step-2-launch-ec2-instance)
 - [Step 3. Install & Start Nginx](#step-3-install--start-nginx)
 - [Step 4. Configure DNS in Cloudflare](#step-4-configure-dns-in-cloudflare)
-- [Step 5. Recommendation of Best practice]
 - [Step 5. Recommendation of Best Practice](#step-4-Recommendation-of-best-practice)
   
 ---
