@@ -1,6 +1,6 @@
 # Lab: Nginx Web Server on EC2 with Cloudflare DNS
 
-**Objective:** Deploy a publicly accessible Nginx web server on AWS EC2 and point a custom domain to it via Cloudflare DNS.
+**Lab Objective:** Deploy a publicly accessible Nginx web server on AWS EC2 and point a custom domain to it via Cloudflare DNS.
 
 **Requirements:** AWS account, Cloudflare account, SSH key pair
 
@@ -109,5 +109,37 @@ Registering Djibsec.com domain
 
 
 You should now be able to access `djibsec.com`
+
+
+
+## Difficulties encounters during the repro of this lab:
+
+HTTPS/http Not Working with Cloudflare and EC2 (No SSL Certificate)
+
+## Root Cause:
+By default Cloudflare use SSL certificate
+
+## Fix:
+
+Navigate to Go to **SSL/TLS → Overview**
+- Click **Custom** to override the automatic setting
+- Change the encryption mode from **Full** to **Flexible**
+- Click  Save button
+
+## EC2 Public IP Changes on Stop/Start
+Whenever an EC2 instance is halted and restarted, AWS assigns a different public IP address to it
+ 
+## Root Cause:
+
+## Fix:
+- You point out the new IP address  of EC2 instance in Cloudfare
+-Or use statis IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+
+
+## Recommendation of Best practice:
+
+Restrict access to port 22 to your designated IP address in a production setting.
+Consider using SSL certificate in Cloudflare for environment project  and select the full mode option.
+
 
 ![djibec.com](Djibsec.png)
