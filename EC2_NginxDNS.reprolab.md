@@ -43,9 +43,6 @@
 | 80 | HTTP | 0.0.0.0/0 | Web traffic |
 | 443 | HTTPS | 0.0.0.0/0 | Secure web traffic |
 
-Limit port 22 access to your specific IP in a live environment. 
-
-If you are applying this outside the instance configuration menu: **Actions → Security → Change security groups**
 
 **Note your public IP** (Networking tab) — needed for DNS config.
 
