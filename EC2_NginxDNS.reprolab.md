@@ -70,13 +70,13 @@ sudo apt update -y && sudo apt install -y nginx
 sudo systemctl start nginx && sudo systemctl enable nginx
 ```
 
-**Verify:**
+**Verify:Nginx service is running**
 
 ```bash
 sudo systemctl status nginx
 ```
 
-This should show the service is active (running).
+This should show the service is active (running) as shown in green highligthed.
 
 ![Nginx status](Nginx_status.png)
 
