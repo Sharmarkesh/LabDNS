@@ -83,7 +83,7 @@ This should show the service is active (running).
 
 When visit `http://108.130.44.248` in a browser. You should see the Nginx welcome page.
 
-![Nginx welcome](Welcome Nginx.png)
+![Nginx welcome](Defaultpage.png)
 
 ---
 
