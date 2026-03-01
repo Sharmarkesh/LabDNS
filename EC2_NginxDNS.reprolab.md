@@ -76,12 +76,12 @@ sudo systemctl status nginx
 
 This should show the service is active (running) as shown in green highligthed.
 
-![Nginx status](Nginxstatus.png)
+![Nginx status](nginxstatus.png)
 
 
 When visit `http://34.250.247.6` in a browser. You should see the Nginx welcome page.
 
-![Nginx welcome](Defaultpage.png)
+![Nginx welcome](defaultpage.png)
 
 ---
 
@@ -105,6 +105,10 @@ Registering Djibsec.com domain
 
 ![DNS records](CloudflareDNSDomain.png)
 
+
+A-record for Djibsec.com
+
+![A records](Cloudflare-A-Record.png)
 
 You should now be able to access `djibsec.com`
 
