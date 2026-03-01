@@ -77,6 +77,7 @@ sudo systemctl status nginx
 ```
 
 This should show the service is active (running).
+
 ![Nginx status](Nginx active.png)
 
 
