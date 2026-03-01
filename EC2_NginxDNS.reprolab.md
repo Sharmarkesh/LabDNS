@@ -99,7 +99,7 @@ Dashboard → **DNS** → **Records** → **Add record**
 
 Mapping the EC2 instance IP address 34.250.247.6 to  Djibsec.com  domain 
 
-![DNS records](CloudfareDNSRecord.png)
+![DNS records](CloudflareDNSRecord.png)
 
 Registering Djibsec.com domain
 
@@ -112,7 +112,7 @@ A-record for Djibsec.com
 
 You should now be able to access `djibsec.com`
 
-![djibec.com](Djibsec.png)
+![djibec.com](djibsec.png)
 
 ## Difficulties encounters during the repro of this lab:
 
