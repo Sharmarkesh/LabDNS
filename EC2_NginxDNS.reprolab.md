@@ -12,7 +12,7 @@
 - [Step 2. Launch EC2 Instance](#step-2-launch-ec2-instance)
 - [Step 3. Install & Start Nginx](#step-3-install--start-nginx)
 - [Step 4. Configure DNS in Cloudflare](#step-4-configure-dns-in-cloudflare)
-- [Step 5. Recommendation of Best Practice](#step-4-Recommendation-of-best-practice)
+- [Step 5. Recommendation  Best Practice](#step-5-Recommendation-best-practice)
   
 ---
 
@@ -137,8 +137,9 @@ Whenever an EC2 instance is halted and restarted, AWS assigns a different public
 
  Fix:
  
-- You point out the new IP address  of EC2 instance in Cloudfare
--Or use statis IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+- Change the new IP address  of EC2 instance in Cloudfare.
+  
+-Or use static IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
 
 
