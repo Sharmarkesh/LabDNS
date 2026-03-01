@@ -49,7 +49,7 @@ If you are applying this outside the instance configuration menu: **Actions → 
 
 **Note your public IP** (Networking tab) — needed for DNS config.
 
-> Instance IP: `108.130.44.248`
+> Instance IP: `34.250.247.6`
 
 ---
 
@@ -58,9 +58,9 @@ If you are applying this outside the instance configuration menu: **Actions → 
 SSH into the instance:
 
 ```bash
-ssh -i your-key.pem ubuntu@44.204.45.98
+ssh -i your-key.pem ubuntu@34.250.247.6
 ```
-
+![Nginx status](sshEC2.png)
 Install and start Nginx:
 
 ```bash
@@ -76,10 +76,10 @@ sudo systemctl status nginx
 
 This should show the service is active (running) as shown in green highligthed.
 
-![Nginx status](Nginx_status.png)
+![Nginx status](Nginxstatus.png)
 
 
-When visit `http://108.130.44.248` in a browser. You should see the Nginx welcome page.
+When visit `http://34.250.247.6` in a browser. You should see the Nginx welcome page.
 
 ![Nginx welcome](Defaultpage.png)
 
@@ -93,17 +93,17 @@ Dashboard → **DNS** → **Records** → **Add record**
 |---|---|
 | Type | A |
 | Name | @ (root domain) |
-| IPv4 address | 108.130.44.248` |
+| IPv4 address | 34.250.247.6` |
 | TTL | Auto |
 | Proxy status | DNS only (grey cloud) |
 
-Mapping the EC2 instance IP address 108.130.44.248 to  Djibsec.com  domain 
+Mapping the EC2 instance IP address 34.250.247.6 to  Djibsec.com  domain 
 
-![DNS records](CloudfareDomain.png)
+![DNS records](CloudfareDNSRecord.png)
 
 Registering Djibsec.com domain
 
-![DNS records](CloudfareDNSrecord.png)
+![DNS records](CloudflareDNSDomain.png)
 
 
 You should now be able to access `djibsec.com`
