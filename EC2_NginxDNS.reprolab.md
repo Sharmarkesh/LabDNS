@@ -99,7 +99,11 @@ Dashboard → **DNS** → **Records** → **Add record**
 | TTL | Auto |
 | Proxy status | DNS only (grey cloud) |
 
+Mapping the EC2 instance IP address 108.130.44.248 to  Djibsec.com  domain 
+
 ![DNS records](CloudfareDomain.png)
+
+Registering Djibsec.com dmain
 
 ![DNS records](CloudfareDNSrecord.png)
 
