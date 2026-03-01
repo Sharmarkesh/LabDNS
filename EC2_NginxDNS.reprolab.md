@@ -12,10 +12,7 @@
 - [Step 2. Launch EC2 Instance](#step-2-launch-ec2-instance)
 - [Step 3. Install & Start Nginx](#step-3-install--start-nginx)
 - [Step 4. Configure DNS in Cloudflare](#step-4-configure-dns-in-cloudflare)
-- [Troubleshooting](#troubleshooting)
-  - [HTTPS Not Working with Cloudflare and EC2](#https-not-working-with-cloudflare-and-ec2-no-ssl-certificate)
-  - [EC2 Public IP Changes on Stop/Start](#ec2-public-ip-changes-on-stopstart)
-
+  
 ---
 
 ## Step 1. Buy a Domain (Cloudflare)
@@ -116,10 +113,10 @@ You should now be able to access `djibsec.com`
 
 HTTPS/http Not Working with Cloudflare and EC2 (No SSL Certificate)
 
-## Root Cause:
+# Root Cause:
 By default Cloudflare use SSL certificate
 
-## Fix:
+# Fix:
 
 Navigate to Go to **SSL/TLS → Overview**
 - Click **Custom** to override the automatic setting
@@ -129,9 +126,9 @@ Navigate to Go to **SSL/TLS → Overview**
 ## EC2 Public IP Changes on Stop/Start
 Whenever an EC2 instance is halted and restarted, AWS assigns a different public IP address to it
  
-## Root Cause:
+# Root Cause:
 
-## Fix:
+# Fix:
 - You point out the new IP address  of EC2 instance in Cloudfare
 -Or use statis IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
