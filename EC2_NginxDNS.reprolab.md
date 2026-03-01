@@ -103,7 +103,7 @@ Mapping the EC2 instance IP address 108.130.44.248 to  Djibsec.com  domain
 
 ![DNS records](CloudfareDomain.png)
 
-Registering Djibsec.com dmain
+Registering Djibsec.com domain
 
 ![DNS records](CloudfareDNSrecord.png)
 
