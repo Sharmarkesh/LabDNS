@@ -99,6 +99,8 @@ Dashboard → **DNS** → **Records** → **Add record**
 | TTL | Auto |
 | Proxy status | DNS only (grey cloud) |
 
+![DNS records](CloudfareDomain.png)
+
 ![DNS records](CloudfareDNSrecord.png)
 
 
