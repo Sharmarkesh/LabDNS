@@ -78,7 +78,7 @@ sudo systemctl status nginx
 
 This should show the service is active (running).
 
-![Nginx status](Nginx active.png)
+![Nginx status](Nginx_status.png)
 
 
 When visit `http://108.130.44.248` in a browser. You should see the Nginx welcome page.
