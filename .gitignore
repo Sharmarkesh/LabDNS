@@ -1,0 +1,17 @@
+.DS_Store
+.env
+
+# Ignore sensitive files
+*.pem
+*.key
+*.pub
+my-key
+
+# Ignore variables files
+*.auto.tfvars
+*.tfvars
+
+provider.tf
+variable.tf
+instance.tf
+
