@@ -12,6 +12,8 @@
 - [Step 2. Launch EC2 Instance](#step-2-launch-ec2-instance)
 - [Step 3. Install & Start Nginx](#step-3-install--start-nginx)
 - [Step 4. Configure DNS in Cloudflare](#step-4-configure-dns-in-cloudflare)
+- [Step 5. Recommendation of Best practice]
+- [Step 5. Recommendation of Best Practice](#step-4-Recommendation-of-best-practice)
   
 ---
 
@@ -114,6 +116,7 @@ You should now be able to access `djibsec.com`
 HTTPS/http Not Working with Cloudflare and EC2 (No SSL Certificate)
 
 Root Cause:
+
 By default Cloudflare use SSL certificate
 
 Fix:
@@ -124,11 +127,13 @@ Navigate to Go to **SSL/TLS → Overview**
 - Click  Save button
 
 ## EC2 Public IP Changes on Stop/Start
+
 Whenever an EC2 instance is halted and restarted, AWS assigns a different public IP address to it
  
 #Root Cause:
 
  Fix:
+ 
 - You point out the new IP address  of EC2 instance in Cloudfare
 -Or use statis IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
@@ -137,6 +142,7 @@ Whenever an EC2 instance is halted and restarted, AWS assigns a different public
 ## Recommendation of Best practice:
 
 Restrict access to port 22 to your designated IP address in a production setting.
+
 Consider using SSL certificate in Cloudflare for environment project  and select the full mode option.
 
 
