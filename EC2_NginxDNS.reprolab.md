@@ -107,16 +107,16 @@ Registering Djibsec.com domain
 
 You should now be able to access `djibsec.com`
 
-
+![djibec.com](Djibsec.png)
 
 ## Difficulties encounters during the repro of this lab:
 
 HTTPS/http Not Working with Cloudflare and EC2 (No SSL Certificate)
 
-# Root Cause:
+Root Cause:
 By default Cloudflare use SSL certificate
 
-# Fix:
+Fix:
 
 Navigate to Go to **SSL/TLS → Overview**
 - Click **Custom** to override the automatic setting
@@ -126,11 +126,12 @@ Navigate to Go to **SSL/TLS → Overview**
 ## EC2 Public IP Changes on Stop/Start
 Whenever an EC2 instance is halted and restarted, AWS assigns a different public IP address to it
  
-# Root Cause:
+#Root Cause:
 
-# Fix:
+ Fix:
 - You point out the new IP address  of EC2 instance in Cloudfare
 -Or use statis IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+
 
 
 ## Recommendation of Best practice:
@@ -139,4 +140,4 @@ Restrict access to port 22 to your designated IP address in a production setting
 Consider using SSL certificate in Cloudflare for environment project  and select the full mode option.
 
 
-![djibec.com](Djibsec.png)
+
