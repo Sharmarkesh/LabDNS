@@ -117,7 +117,7 @@ HTTPS/http Not Working with Cloudflare and EC2 (No SSL Certificate)
 
 Root Cause:
 
-By default Cloudflare use SSL certificate
+- By default Cloudflare use SSL certificate
 
 Fix:
 
@@ -130,13 +130,13 @@ Navigate to Go to **SSL/TLS → Overview**
 
 Whenever an EC2 instance is halted and restarted, AWS assigns a different public IP address to it
  
-#Root Cause:
+#Root Cause: EC2 instance public IP keeps changing 
 
  Fix:
  
 - Change the new IP address  of EC2 instance in Cloudfare.
   
--Or use static IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+- Or use static IP address known as Elastic IP ( https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
 
 
