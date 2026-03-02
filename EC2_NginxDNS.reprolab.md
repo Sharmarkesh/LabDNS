@@ -146,27 +146,29 @@ Restrict access to port 22 to your designated IP address in a production setting
 
 Instead of :
 0.0.0.0/0->Port 22
+
 Use:
 Your_Public_IP/32 -> Port 22
 
 Consider using SSL certificate in Cloudflare for environment project and select the full mode option for more security.
 
-Use Full (Strict) mode in Cloudflare and install SSL certificate on EC2
+- Use Full (Strict) mode in Cloudflare and install SSL certificate on EC2
 
-That way: User-> HTTPS->Cloudflare->HTTPS->EC2 (Fully encrypted
+- That way: User-> HTTPS->Cloudflare->HTTPS->EC2 (Fully encrypted
   
-Elastic IP to consider  more appropriate as EC2 public IP keeps changing every time the instance get stop or reboot.
+- Elastic IP to consider  more appropriate as EC2 public IP keeps changing every time the instance get stop or reboot.
+
 Elastic IP provides the following:
 
 - Statis public IP
-- 
--Allocated to the AWS account
+ 
+- Allocated to the AWS account
 
--Can be attached /detached from instances
+- Can be attached /detached from instances
 
--Does not change after reboot
+- Does not change after reboot
 
--As best practice, provision Elastic via terraform instead of manually assign static IP
+- As best practice, provision Elastic via terraform instead of manually assign static IP
 
 
 
